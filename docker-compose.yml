@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  spring:
+    image: read-lock:0.0.1-SNAPSHOT
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql
